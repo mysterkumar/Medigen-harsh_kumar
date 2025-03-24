@@ -16,7 +16,9 @@ This is a full-stack single-page application built for an interview task. The pr
 ## backend is not hosted yet - may not work live so pasting a Gif
 
 ## View
-![Medigen Demo](docs/media/demo.gif)
+<div align="center">
+  <img src="docs/media/demo.gif" alt="Medigen Demo" width="80%" />
+</div>
 
 ## 🔗 User ID | Pass - medigen | 1234
 
