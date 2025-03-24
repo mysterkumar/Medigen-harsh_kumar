@@ -1,6 +1,8 @@
 ---
 
-# 💊 Medigen – Medicine Comparison Web App
+# 💊 Medigen – Medicine Comparison Web App 
+
+## 🔗 Live site - https://medigen-harsh-kumar.vercel.app/
 
 This is a full-stack single-page application built for an interview task. The project includes:
 

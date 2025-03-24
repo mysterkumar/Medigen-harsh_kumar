@@ -1,0 +1,33 @@
+**So this is all I did -**
+
+The database was created with 5 normalized tables and populated using dummy_data.py.
+Flask API was built to return products, salts, reviews, and descriptions.
+JWT-based login system implemented with a dummy username and password.
+React frontend is fully dynamic – no hardcoded content.
+UI is broken into reusable components like SaltSection, CompareSection, etc.
+All data is fetched from the backend using async API calls.
+Design is responsive and clean, following the reference layout.
+As an extra, I added a logout button for better UX.
+Product images were taken from Medingen’s actual live site.
+
+(optional readings below, Just my experience with this task)
+
+**My confusions -**
+
+I was a bit uncertain about the image uploaded in documentation, I thought i have to make something similar to it. To Stay clear I sticked to the textual instructions.
+
+**My challenges -** 
+
+1. I was stuck in mysql db because i added an auto increamenter and due to which it must keep on adding the other product items keeping last p_id intact. It's a feature not a bug. So I dropped the table and started fresh. 
+2. When i was using the Medigen logo and image assets from their site i found that there is no right click which is disabled i guess for safety so I did ctrl+shift+I. Pretty basic for me.
+3. JWT authroization was basic but i was stuck when I was testing salts. It was just the bearer token expired, i refreshed my knowledge it has a lifespan of a token is 15 min only. Like it's minimum age of a Mayfly. Anyways...
+4. Just when i started working i saw watchers on my github repo, Someone is watching my work. I hate to share unfinished work so i change visibility to private. I will surely make it public
+
+**My Note -** 
+
+Thank you so much for refreshing my knowledge about mysql, i usually use MERN stack. 
+But for my own surprise i picked up MYSQL very quick. I am still learning AWS I am not that confident in that because of just learning i exhausted my 750 hr of ec2 machine as i was fond of building python script about whatsapp scheduler and like a softwere to do all google reviews. though i succeed but i exhauseted all of the free tier. Now i am learning rds in aws because i have to create a saas for an online store Print24*7, they told me to develop some kind of software that organize their internal task like po, so...
+
+Thanks for everything once again !
+It's just that i wanted to talk and no one's here, so i did through this. 
+Thank for listening..(sorry)..Reading..

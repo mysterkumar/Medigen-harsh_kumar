@@ -35,7 +35,6 @@ const MainPage = () => {
           <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}></div>
         )}
 
-        {/* currently for p1 */}
         {products[0] && (
           <>
             <SaltSection productId={products[0].id} />
