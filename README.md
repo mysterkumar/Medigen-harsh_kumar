@@ -16,18 +16,21 @@ This is a full-stack single-page application built for an interview task. The pr
 
 ```
 medigen-harsh_kumar/
-├── backend/              # Flask backend API
-│   ├── app.py
-│   ├── config.py
-│   ├── models.py
-│   ├── dummy_data.py     # Populates sample data
-│   ├── requirements.txt
-├── database/             # DB schema
-│   └── db_init.sql
-├── frontend/             # React app
-│   ├── public/
-│   ├── src/
-├── README.md             # This file
+├── backend/                    # Flask backend API
+│ ├── app.py
+│ ├── config.py
+│ ├── models.py
+│ ├── dummy_data.py             # Populates sample data
+│ ├── requirements.txt
+├── database/                   # DB schema
+│ └── db_init.sql
+├── frontend/                   # React app
+│ ├── public/
+│ ├── src/
+├── docs/                
+│ └── documentation/            # Documentation and API proof
+│ └── postman_screenshots/      # Postman screenshots for API testing
+├── README.md                   # This file
 ```
 
 ---
