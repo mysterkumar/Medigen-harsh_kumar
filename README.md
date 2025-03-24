@@ -12,7 +12,11 @@ This is a full-stack single-page application built for an interview task. The pr
 
 ---
 
-## 🔗 Live site - https://medigen-harsh-kumar.vercel.app/
+## 🔗 Live site - https://medigen-harsh-kumar.vercel.app/ 
+## backend is not hosted yet - may not work live so pasting a Gif
+
+## View
+![Medigen Demo](docs/media/demo.gif)
 
 ## 🔗 User ID | Pass - medigen | 1234
 
