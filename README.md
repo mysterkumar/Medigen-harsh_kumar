@@ -14,7 +14,7 @@ This is a full-stack single-page application built for an interview task. The pr
 
 ## View
 <div align="center">
-  <img src="https://github.com/mysterkumar/medigen-harsh_kumar/raw/main/docs/media/demo.gif" alt="Medigen Demo" width="80%" />
+  <img src="docs/media/Demo.gif" alt="Medigen Demo" width="80%" />
 </div>
 
 ## 🔗 User ID | Pass - medigen | 1234
