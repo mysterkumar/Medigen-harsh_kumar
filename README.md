@@ -20,8 +20,9 @@ medigen-harsh_kumar/
 │   ├── app.py
 │   ├── config.py
 │   ├── models.py
-│   └── requirements.txt
-├── database/             # DB schema and dummy data
+│   ├── dummy_data.py     # Populates sample data
+│   ├── requirements.txt
+├── database/             # DB schema
 │   └── db_init.sql
 ├── frontend/             # React app
 │   ├── public/
@@ -56,10 +57,17 @@ pip install -r requirements.txt
 ```
 
 4. Set up MySQL:
-- Create a database
-- Run the SQL script in `database/db_init.sql` to initialize schema and insert sample data.
+- Install MySQL Server & Workbench
+- Create a new connection (host: `127.0.0.1`, port: `3306`, user: `root`)
+- Run the SQL script in `database/db_init.sql` to create tables
 
-5. Start Flask server:
+5. Insert sample data:
+
+```bash
+python dummy_data.py
+```
+
+6. Start Flask server:
 
 ```bash
 python app.py
@@ -95,19 +103,20 @@ App runs at: `http://localhost:3000`
 
 ## 🔐 Authentication
 
-A dummy login system is implemented using username and password prompt (for demo purposes). Upon login, a JWT token is fetched and used to authenticate API requests.
+A dummy login system is implemented using a username/password prompt.  
+After login, a **JWT token** is returned and used for authenticating protected routes.
 
 ---
 
 ## 📦 API Endpoints
 
-| Method | Endpoint                    | Description                       |
-|--------|-----------------------------|-----------------------------------|
-| POST   | `/login`                    | Dummy login with username/password |
-| GET    | `/products`                 | Get list of products              |
-| GET    | `/salts/<product_id>`       | Get salt info for product         |
-| GET    | `/reviews/<product_id>`     | Get product reviews               |
-| GET    | `/descriptions/<product_id>`| Get product description           |
+| Method | Endpoint                      | Description                        |
+|--------|-------------------------------|------------------------------------|
+| POST   | `/login`                      | Dummy login with username/password |
+| GET    | `/products`                   | Get all products                   |
+| GET    | `/salts/<product_id>`         | Get salt content for product       |
+| GET    | `/reviews/<product_id>`       | Get reviews for product            |
+| GET    | `/descriptions/<product_id>`  | Get product description            |
 
 ---
 
@@ -119,24 +128,23 @@ A dummy login system is implemented using username and password prompt (for demo
 - `reviews`
 - `descriptions`
 
-All tables are normalized to maintain clean data design.
+All tables are normalized and relationally linked.
 
 ---
 
 ## 📱 Features
 
-- Fully dynamic UI (no hardcoded data)
+- Fully dynamic UI (no hardcoded data in frontend)
 - Responsive layout (mobile + desktop)
-- Component-based structure
-- Uses React Context for global state
-- Flask API with SQLAlchemy and JWT
-- MySQL database with sample data
+- Component-based React structure
+- Uses React Context for state (token, product data)
+- Flask REST API with SQLAlchemy + JWT
+- MySQL DB integration with sample data
 
 ---
 
 ## 📌 Notes
 
-- All dummy images and logos used are from public sources.
-- This project is for interview/demo purposes only.
-
----
+- All logos/images used are from public placeholder sources.
+- This project is for demo/interview purposes only.
+```
