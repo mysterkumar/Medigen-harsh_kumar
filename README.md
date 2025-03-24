@@ -16,21 +16,46 @@ This is a full-stack single-page application built for an interview task. The pr
 
 ```
 medigen-harsh_kumar/
-├── backend/                    # Flask backend API
-│ ├── app.py
-│ ├── config.py
-│ ├── models.py
-│ ├── dummy_data.py             # Populates sample data
-│ ├── requirements.txt
-├── database/                   # DB schema
-│ └── db_init.sql
-├── frontend/                   # React app
-│ ├── public/
-│ ├── src/
-├── docs/                
-│ └── documentation/            # Documentation and API proof
-│ └── postman_screenshots/      # Postman screenshots for API testing
-├── README.md                   # This file
+├── backend/                      # Flask backend API
+│   ├── app.py                    # Flask application entry point
+│   ├── config.py                 # Database and JWT configuration
+│   ├── dummy_data.py             # Script to populate sample data
+│   ├── models.py                 # SQLAlchemy database models
+│   └── requirements.txt          # Python dependencies
+│
+├── database/                     # Database schema
+│   └── db_init.sql               # SQL script to initialize database
+│
+├── frontend/                     # React frontend application
+│   ├── node_modules/             # NPM dependencies (git-ignored)
+│   ├── public/                   # Static public assets
+│   │   └── index.html            # HTML entry point
+│   ├── src/                      # Source code
+│   │   ├── components/           # React components
+│   │   │   ├── CompareSection.js # Medicine comparison component
+│   │   │   ├── FAQSection.js     # Frequently asked questions
+│   │   │   ├── Header.js         # Page header with logo
+│   │   │   ├── ReviewSection.js  # Medicine reviews component
+│   │   │   └── SaltSection.js    # Salt composition component
+│   │   ├── context/
+│   │   │   └── AuthContext.js    # Authentication context provider
+│   │   ├── pages/
+│   │   │   ├── LoginPage.js      # Login page with JWT authentication
+│   │   │   └── MainPage.js       # Main application page
+│   │   ├── App.css               # Main CSS styles
+│   │   ├── App.js                # Root React component
+│   │   ├── index.css             # Global CSS styles
+│   │   └── index.js              # React entry point
+│   ├── package.json              # NPM configuration and dependencies
+│   └── package-lock.json         # Exact dependency versions (git-ignored)
+│
+├── docs/                         # Documentation
+│   ├── database/                 # MySQL workbench screenshots
+│   └── postman_screenshots/      # API testing screenshots
+│
+├── .gitignore                    # Git ignored files and directories
+└── README.md                     # Project documentation
+
 ```
 
 ---

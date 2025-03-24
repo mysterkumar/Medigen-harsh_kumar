@@ -4,6 +4,8 @@
 -- reviews to capture customer ratings and feedback for each product.
 -- descriptions for additional content related to products.
 
+-- should be ran into mysql
+
 -- Create database
 CREATE DATABASE IF NOT EXISTS medigen_db;
 USE medigen_db;

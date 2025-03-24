@@ -1,12 +1,26 @@
+# this file is being used to inject the dummy data in mysql. I added fresh start so whenever it runs it provide fresh data
+
 from app import app, db
 from models import Product, Salt, ProductSalt, Review, Description
 
 with app.app_context():
+
+#just to start fresh, nothing else. i mean the previous data that you might have injected will be removed
+
+    db.session.query(Description).delete()
+    db.session.query(Review).delete()
+    db.session.query(ProductSalt).delete()
+    db.session.query(Salt).delete()
+    db.session.query(Product).delete()
+    db.session.commit()
+
+# Rest creations starts from here
+
     db.create_all()
 
     # Products
-    p1 = Product(name="Dolo 650", manufacturer="Micro Labs Ltd", price=30.00, quantity="15 Tablets", image_url="https://dummyimage.com/100x100/000/fff&text=Dolo")
-    p2 = Product(name="Paracetamol 500", manufacturer="Cipla Ltd", price=25.00, quantity="10 Tablets", image_url="https://dummyimage.com/100x100/000/fff&text=PCM")
+    p1 = Product(name="Dolo 650", manufacturer="Micro Labs Ltd", price=30.00, quantity="15 Tablets", image_url="https://d26lh6sqkii1nb.cloudfront.net/products/41532_0559-DOLO-650(2).jpg")
+    p2 = Product(name="Paracetamol 500", manufacturer="Cipla Ltd", price=25.00, quantity="10 Tablets", image_url="https://d26lh6sqkii1nb.cloudfront.net/products/06859_0712-PARACETAMOL%20500MG.jpg")
 
     db.session.add_all([p1, p2])
     db.session.commit()
@@ -37,4 +51,4 @@ with app.app_context():
     ])
 
     db.session.commit()
-    print("Dummy data inserted")
+    print("Dummy data inserted ✅")

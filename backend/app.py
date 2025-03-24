@@ -25,9 +25,9 @@ jwt = JWTManager(app)
 def home():
     return {'message': 'Medigen Flask API is running ✅'}
 
-# ----------------------------------
-# ✅ /login (Dummy Auth)
-# ----------------------------------
+
+# /login (Dummy Auth)
+
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -41,9 +41,8 @@ def login():
     else:
         return jsonify({'msg': 'Invalid credentials'}), 401
 
-# ----------------------------------
-# ✅ /products
-# ----------------------------------
+#  /products
+
 
 @app.route('/products', methods=['GET'])
 @jwt_required()
@@ -59,9 +58,7 @@ def get_products():
     } for p in products]
     return jsonify(result)
 
-# ----------------------------------
-# ✅ /salts/<product_id>
-# ----------------------------------
+#  /salts/<product_id>
 
 @app.route('/salts/<int:product_id>', methods=['GET'])
 @jwt_required()
@@ -74,9 +71,9 @@ def get_salts(product_id):
     } for s in mappings]
     return jsonify(result)
 
-# ----------------------------------
-# ✅ /reviews/<product_id>
-# ----------------------------------
+
+#  /reviews/<product_id>
+
 
 @app.route('/reviews/<int:product_id>', methods=['GET'])
 @jwt_required()
@@ -88,9 +85,7 @@ def get_reviews(product_id):
     } for r in reviews]
     return jsonify(result)
 
-# ----------------------------------
-# ✅ /descriptions/<product_id>
-# ----------------------------------
+#  /descriptions/<product_id>
 
 @app.route('/descriptions/<int:product_id>', methods=['GET'])  
 @jwt_required()  
