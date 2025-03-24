@@ -14,6 +14,8 @@ This is a full-stack single-page application built for an interview task. The pr
 
 ## 🔗 Live site - https://medigen-harsh-kumar.vercel.app/
 
+## 🔗 User ID | Pass - Medigan | 1234
+
 ## 🗂️ Project Structure
 
 ```
