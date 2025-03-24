@@ -2,8 +2,6 @@
 
 # 💊 Medigen – Medicine Comparison Web App 
 
-## 🔗 Live site - https://medigen-harsh-kumar.vercel.app/
-
 This is a full-stack single-page application built for an interview task. The project includes:
 
 - ✅ **React** frontend for UI
@@ -13,6 +11,8 @@ This is a full-stack single-page application built for an interview task. The pr
 - ✅ Responsive design for desktop and mobile
 
 ---
+
+## 🔗 Live site - https://medigen-harsh-kumar.vercel.app/
 
 ## 🗂️ Project Structure
 
