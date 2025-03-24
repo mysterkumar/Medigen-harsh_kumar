@@ -12,9 +12,6 @@ This is a full-stack single-page application built for an interview task. The pr
 
 ---
 
-## 🔗 Live site - https://medigen-harsh-kumar.vercel.app/ 
-## backend is not hosted yet - may not work live so pasting a Gif
-
 ## View
 <div align="center">
   <img src="docs/media/demo.gif" alt="Medigen Demo" width="80%" />
