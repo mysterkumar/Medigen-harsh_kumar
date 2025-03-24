@@ -14,7 +14,7 @@ This is a full-stack single-page application built for an interview task. The pr
 
 ## 🔗 Live site - https://medigen-harsh-kumar.vercel.app/
 
-## 🔗 User ID | Pass - Medigan | 1234
+## 🔗 User ID | Pass - medigan | 1234
 
 ## 🗂️ Project Structure
 
@@ -140,7 +140,7 @@ After login, a **JWT token** is returned and used for authenticating protected r
 
 ---
 
-## 📦 API Endpoints
+## 📦 API Endpoints (screenshots available)
 
 | Method | Endpoint                      | Description                        |
 |--------|-------------------------------|------------------------------------|
@@ -152,7 +152,7 @@ After login, a **JWT token** is returned and used for authenticating protected r
 
 ---
 
-## 📊 Database Tables
+## 📊 Database Tables (screenshots available)
 
 - `products`
 - `salts`

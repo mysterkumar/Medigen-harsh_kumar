@@ -35,7 +35,7 @@ def login():
     username = data.get('username')
     password = data.get('password')
 
-    if username == 'Medigan' and password == '1234':
+    if username == 'medigan' and password == '1234':
         access_token = create_access_token(identity=username)
         return jsonify(token=access_token), 200
     else:
